@@ -170,7 +170,7 @@ def reset_daily():
 # Main
 # -----------------------
 def main():
-    token = os.getenv("8466271055:AAFJHcvJ3WR2oAI7g1Xky2760qLgM68WXMM")   # Render will inject this
+    token = os.getenv("8466271055:AAFJHcvJ3WR2oAI7g1Xky2760qLgM68WXMM")   # gets token from Render env
     app = Application.builder().token(token).build()
 
     app.add_handler(CommandHandler("start", start))
@@ -187,3 +187,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
